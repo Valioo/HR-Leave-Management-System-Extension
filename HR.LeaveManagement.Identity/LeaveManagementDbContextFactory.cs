@@ -16,7 +16,7 @@ namespace HR.LeaveManagement.Persistence
 
             var builder = new DbContextOptionsBuilder<LeaveManagementIdentityDbContext>();
             var connectionString = configuration.GetConnectionString("LeaveManagementConnectionString");
-
+            //builder.UseSqlServer(connectionString, b => b.MigrationsAssembly("HR.LeaveManagement.API"));
             builder.UseSqlServer(connectionString);
 
             return new LeaveManagementIdentityDbContext(builder.Options);

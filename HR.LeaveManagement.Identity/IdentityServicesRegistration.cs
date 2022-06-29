@@ -53,6 +53,8 @@ namespace HR.LeaveManagement.Identity
                     };
                 });
 
+            services.AddAutoMapper(Assembly.GetExecutingAssembly());
+
             return services;
         }
     }

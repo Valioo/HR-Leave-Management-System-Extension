@@ -21,5 +21,6 @@ namespace HR.LeaveManagement.Application.Models.Identity
         [Required]
         [MinLength(6)]
         public string Password { get; set; }
+
     }
 }
